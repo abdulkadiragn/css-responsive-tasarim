@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      .header {
+        padding: 25px;
+        background: white;
+        text-align: center;
+      }
+      body {
+        background: #f1f1f1;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .nav {
+        overflow: hidden;
+        background-color: black;
+      }
+      .nav a {
+        padding: 15px 17px;
+        float: left;
+        text-decoration: none;
+        color: white;
+      }
+      .nav a:hover {
+        background-color: silver;
+      }
+      .sol{
+          float: left;
+          width: 75%;
+      }
+      .sag{
+          float: left;
+          width: 25%;
+          padding-left: 20px;
+      }
+      .card{
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+      }
+      .img1{
+          background-color: #aaa;
+          padding: 20px;
+          width: 100%;
+      }
+      .row::after{
+          content: "";
+          display: table;
+          clear: both;
+      }
+      .footer{
+          color: white;
+          background-color: black;
+          padding: 20px;
+          text-align: center;
+          margin-top: 20px;
+      }
+      @media screen and (max-width:800px){
+          .sag,.sol{
+              width: 100%;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Website</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, itaque.
+      </p>
+    </div>
+    <div class="nav">
+      <a href="">Link1</a>
+      <a href="">Link2</a>
+      <a href="">Link3</a>
+      <a href="" style="float: right">Link4</a>
+    </div>
+    <div class="row">
+      <div class="sol">
+        <div class="card">
+          <h2>BAŞLIK</h2>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="img1" style="height: 200px">Image</div>
+          <p>Some text</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            dolorem distinctio deserunt quos quis vitae minima corporis
+            praesentium molestias asperiores quas eveniet odio ducimus commodi
+            omnis est nisi tempora maiores illo maxime dolore alias adipisci
+            obcaecati! Veniam aut, natus dolor similique iusto esse, sapiente
+            culpa dicta optio laudantium a veritatis.
+          </p>
+        </div>
+        <div class="card">
+          <h2>BAŞLIK</h2>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="img1" style="height: 200px">Image</div>
+          <p>Some text</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            dolorem distinctio deserunt quos quis vitae minima corporis
+            praesentium molestias asperiores quas eveniet odio ducimus commodi
+            omnis est nisi tempora maiores illo maxime dolore alias adipisci
+            obcaecati! Veniam aut, natus dolor similique iusto esse, sapiente
+            culpa dicta optio laudantium a veritatis.
+          </p>
+        </div>
+      </div>
+      <div class="sag">
+        <div class="card">
+          <h2>Hakkında</h2>
+          <div class="img1" style="height: 100px">Image</div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
+            esse sequi. Ullam officia explicabo maxime!
+          </p>
+        </div>
+        <div class="card">
+          <h3>Popüler post</h3>
+          <div class="img1">Image</div>
+          <div class="img1">Image</div>
+          <div class="img1">Image</div>
+        </div>
+        <div class="card">
+          <h3>Takip Et</h3>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+  </body>
+</html>
